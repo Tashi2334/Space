@@ -5,11 +5,13 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import Service from './Components/Service'
 import Info from './Components/Info'
+import Review from './Components/Review'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar/>
     <Hero/>
     <Service/>
     <Info/>
+    <Review/>
   </StrictMode>,
 )

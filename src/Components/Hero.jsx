@@ -8,10 +8,10 @@ export default function Hero() {
     <div className="flex justify-between items-start px-16 py-10">
       
       {/* Left Content */}
-      <div className="flex flex-col mt-30 space- max-w-xl">
+      <div className="flex flex-col mt-35 space- max-w-xl">
         
         {/* "High Growth" with logo on right */}
-        <div className="flex items-center justify-between bg-[#f5e2c3] text-[#C68313] text-2xl font-semibold h-[8vh] w-[17vw] px-4 rounded">
+        <div className="flex items-center justify-between bg-[#f5e2c3] mb-5 text-[#C68313] text-2xl font-semibold h-[8vh] w-[17vw] px-4 rounded">
           <span>High Growth</span>
           <img src={logo} alt="Logo" className="h-10 w-10" />
         </div>
@@ -23,7 +23,7 @@ export default function Hero() {
           in <span className="text-[#C68313]">Growth</span>Space
         </div>
 
-        <div className="text-lg leading-relaxed text-gray-700 mt-10">
+        <div className="text-lg leading-relaxed text-gray-700 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           
           tempor incididunt ut labore et dolore magna aliqua.
