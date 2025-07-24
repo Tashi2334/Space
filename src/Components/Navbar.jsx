@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import logo from '../assets/Frame335.png'; // adjust path if needed
 
 const Navbar = () => {
