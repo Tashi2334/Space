@@ -1,15 +1,16 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import uppercase from "../assets/uppercase.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+
 export default function Review() {
   const scrollRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   const cardsCount = 5;
-  const cardWidth = 300 + 24; // card width + gap (adjust gap accordingly)
+  const cardWidth = 300 + 24; // card width + gap
 
-  // Scroll to card by index
   const scrollToIndex = (index) => {
     if (scrollRef.current) {
       scrollRef.current.scrollTo({
@@ -19,7 +20,6 @@ export default function Review() {
     }
   };
 
-  // Update active dot based on scroll position
   const onScroll = () => {
     if (scrollRef.current) {
       const scrollLeft = scrollRef.current.scrollLeft;
@@ -28,11 +28,9 @@ export default function Review() {
     }
   };
 
-  // Optional: throttle scroll event (not shown here for brevity)
-
   return (
     <section className="relative px-4 py-16">
-      {/* "Our Reach" Badge */}
+      {/* Badge */}
       <div className="flex justify-center mb-6">
         <div className="bg-[#f5e2c3] text-[#C68313] text-2xl font-semibold h-[8vh] min-w-[150px] flex items-center justify-center rounded px-6">
           Our Reach
@@ -49,7 +47,7 @@ export default function Review() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
       </div>
 
-      {/* Scrollable Cards */}
+      {/* Cards */}
       <div
         ref={scrollRef}
         onScroll={onScroll}
@@ -69,17 +67,10 @@ export default function Review() {
             </p>
           </div>
         ))}
-    </div>
-                 <div
-  ref={scrollRef}
-  onScroll={onScroll}
-  className="flex overflow-x-auto gap-6 mt-10 px-4 snap-x scroll-smooth hide-scrollbar"
-  style={{ scrollSnapType: "x mandatory" }}
->
-  {/* cards */}
-</div>
-      {/* Pagination Dots */}
-      <div class  Name="flex justify-center mt-6 space-x-3">
+      </div>
+
+      {/* Dots */}
+      <div className="flex justify-center mt-6 space-x-3">
         {[...Array(cardsCount)].map((_, index) => (
           <button
             key={index}
@@ -94,5 +85,5 @@ export default function Review() {
         ))}
       </div>
     </section>
-    )
+  );
 }

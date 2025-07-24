@@ -6,6 +6,7 @@ import Hero from './Components/Hero'
 import Service from './Components/Service'
 import Info from './Components/Info'
 import Review from './Components/Review'
+import Footer from './Components/Footer'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navbar/>
@@ -13,5 +14,6 @@ createRoot(document.getElementById('root')).render(
     <Service/>
     <Info/>
     <Review/>
+    <Footer/>
   </StrictMode>,
 )
