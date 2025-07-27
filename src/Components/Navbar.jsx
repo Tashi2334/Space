@@ -14,7 +14,7 @@ const Navbar = () => {
         {/* Center: Links */}
         <div className="hidden md:flex space-x-8">
          <a  href="#" className="text-[#C68313]  font-medium">Home</a>
-          <a href="#" className="text-gray-700 hover:text-[#C68313] font-medium">Services</a>
+          <a href="/Services" className="text-gray-700 hover:text-[#C68313] font-medium">Services</a>
           <a href="#" className="text-gray-700 hover:text-[#C68313] font-medium">About</a>
           <a href="#" className="text-gray-700 hover:text-[#C68313] font-medium">Contact</a>
         </div>
