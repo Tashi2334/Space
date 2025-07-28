@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from '../Components/Section/header'
 import Options from '../Components/Section/Options'
-import Heads from '../Components/Section/Heads'
+import Leaders from '../Components/Section/Leaders'
 
 const Services = () => {
   return (
     <div>
       <Header />
       <Options/>
-      <Heads/>
+      <Leaders/>
     </div>
   )
 }
